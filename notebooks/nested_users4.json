@@ -1,0 +1,570 @@
+{
+  "bejeweled-beluga": {
+    "name": "Jan Willem Fijen",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 226,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "billowy-meerkat": {
+    "name": "Cosimo  Latorre",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 242,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "bold-bison": {
+    "name": "Cora",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 201,
+    "etage": 1,
+    "aantal_kamers": 3
+  },
+  "bouncy-worm": {
+    "name": "Fien",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 238,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "cackling-eland": {
+    "name": "Maya Sermeno",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 241,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "captivating-dove": {
+    "name": "Bierangna",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 206,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "carefree-lark": {
+    "name": "Maureen De Keyzer",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 230,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "cheerful-boar": {
+    "name": "Rinus Friederichs 223",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 223,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "cheerful-mule": {
+    "name": "Joan Dest",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 232,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "chuckling-stork": {
+    "name": "Diana Blitz",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 218,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "coltish-owl": {
+    "name": "Lex Eisenhardt",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 200,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "cordial-eel": {
+    "name": "Femke",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 226,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "dazzling-curlew": {
+    "name": "J. Guy",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 235,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "dazzling-yak": {
+    "name": "Stephanie Mulder",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 212,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "dynamic-frog": {
+    "name": "Henny Gena ",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 206,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "ebullient-mosquito": {
+    "name": "Tba 215 Agatha",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 215,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "elaborate-jay": {
+    "name": "J.",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 208,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "entertaining-pig": {
+    "name": "Cher",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 204,
+    "etage": 2,
+    "aantal_kamers": 3
+  },
+  "ethereal-lapwing": {
+    "name": "Joke",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 240,
+    "etage": 6,
+    "aantal_kamers": 3
+  },
+  "eye-catching-hare": {
+    "name": "Angelique",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 239,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "eye-catching-okapi": {
+    "name": "Lefman Kan",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 203,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "flecked-beluga": {
+    "name": "Tristan Heijdra",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 203,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "flexible-platypus": {
+    "name": "Margreet Lange",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 222,
+    "etage": 8,
+    "aantal_kamers": 3
+  },
+  "freckled-wolverine": {
+    "name": "Songül",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 229,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "funny-swallow": {
+    "name": "Gino Cleofa",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 211,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "gaudy-whale": {
+    "name": "Alessandro",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 202,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "giddy-tardigrade": {
+    "name": "Yaron",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 239,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "goofy-tiger": {
+    "name": "jona de kruif",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 220,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "happy-beaver": {
+    "name": "Irfan Alic",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 219,
+    "etage": 7,
+    "aantal_kamers": 3
+  },
+  "hilarious-dogfish": {
+    "name": "Anita Kieft",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 209,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "intense-toad": {
+    "name": "Herman",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 222,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "joyful-okapi": {
+    "name": "R.A.W.",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 231,
+    "etage": 3,
+    "aantal_kamers": 3
+  },
+  "joyful-salmon": {
+    "name": "Mari",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 244,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "kooky-tapir": {
+    "name": "Z",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 208,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "limber-ostrich": {
+    "name": "Tim",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 233,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "loony-albatross": {
+    "name": "Roos",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 244,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "lustrous-reindeer": {
+    "name": "JF",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 219,
+    "etage": 5,
+    "aantal_kamers": 3
+  },
+  "merry-salamander": {
+    "name": "Estelle Dura",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 208,
+    "etage": 3,
+    "aantal_kamers": 5
+  },
+  "mind-blowing-kudu": {
+    "name": "Coleta",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 240,
+    "etage": 6,
+    "aantal_kamers": 3
+  },
+  "multicolored-dogfish": {
+    "name": "Thijmen Santen",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 209,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "nimble-raven": {
+    "name": "Ellie Togni",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 233,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "nutty-chamois": {
+    "name": "Eric Laenen",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 229,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "peculiar-ape": {
+    "name": "NienkeS",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 247,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "pellucid-quelea": {
+    "name": "Mario",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 207,
+    "etage": 3,
+    "aantal_kamers": 3
+  },
+  "peppy-badger": {
+    "name": "Cor ten Bosch",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 205,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "peppy-rat": {
+    "name": "Cyriel Reestman",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 236,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "piebald-jay": {
+    "name": "Monique ten Bosch",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 205,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "piebald-rhinoceros": {
+    "name": "Simo",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 202,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "psychedelic-boar": {
+    "name": "Eric",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 238,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "quick-chamois": {
+    "name": "Muhammed Ünal",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 229,
+    "etage": 2,
+    "aantal_kamers": 5
+  },
+  "radiant-coyote": {
+    "name": "Maaike Françoys",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 220,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "resplendent-aardwolf": {
+    "name": "Ids Fijen",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 226,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "rollicking-ostrich": {
+    "name": "Suze Zeegers",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 224,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "saturated-whistling duck": {
+    "name": "Santiago",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 210,
+    "etage": 4,
+    "aantal_kamers": 3
+  },
+  "silky-lapwing": {
+    "name": "Dylan",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 213,
+    "etage": 5,
+    "aantal_kamers": 3
+  },
+  "snorting-ibex": {
+    "name": "Machteld Bouman",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 200,
+    "etage": 1,
+    "aantal_kamers": 5
+  },
+  "soft-eland": {
+    "name": "Jordy Van Rookhuizen",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 210,
+    "etage": 4,
+    "aantal_kamers": 3
+  },
+  "sparkly-mole": {
+    "name": "Stephan Ceuppens",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 237,
+    "etage": 5,
+    "aantal_kamers": 3
+  },
+  "splattered-barracuda": {
+    "name": "Gre",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 234,
+    "etage": 4,
+    "aantal_kamers": 3
+  },
+  "springy-hare": {
+    "name": "Wil Pouw",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 214,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "stippled-pig": {
+    "name": "Dick",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 217,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "sudsy-eland": {
+    "name": "Ineke",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 216,
+    "etage": 6,
+    "aantal_kamers": 3
+  },
+  "sudsy-gazelle": {
+    "name": "Enrico",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 245,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "sudsy-jellyfish": {
+    "name": "Jos Buurman",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 214,
+    "etage": 5,
+    "aantal_kamers": 5
+  },
+  "sunny-gazelle": {
+    "name": "Colinda Kooter",
+    "Geslacht": "Vrouw",
+    "portiek": 1,
+    "nr_appartement": 223,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "tittering-fennec fox": {
+    "name": "Johan",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 220,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "upbeat-pigeon": {
+    "name": "Mirella Habits",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 235,
+    "etage": 4,
+    "aantal_kamers": 5
+  },
+  "vivid-rhinoceros": {
+    "name": "Martin",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 239,
+    "etage": 6,
+    "aantal_kamers": 5
+  },
+  "waggish-porcupine": {
+    "name": "Annelien Berends",
+    "Geslacht": "Vrouw",
+    "portiek": 2,
+    "nr_appartement": 245,
+    "etage": 7,
+    "aantal_kamers": 5
+  },
+  "wispy-reindeer": {
+    "name": "Tarcis Schipper",
+    "Geslacht": "Man",
+    "portiek": 2,
+    "nr_appartement": 247,
+    "etage": 8,
+    "aantal_kamers": 5
+  },
+  "zany-trout": {
+    "name": "Henk Habits",
+    "Geslacht": "Man",
+    "portiek": 1,
+    "nr_appartement": 212,
+    "etage": 5,
+    "aantal_kamers": 5
+  }
+}

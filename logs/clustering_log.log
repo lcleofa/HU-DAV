@@ -1,0 +1,28 @@
+2025-10-23 01:28:54.973 | INFO     | wa_analyzer.apartment_community_wk6:load_data:89 - Loaded 4565 messages and 75 author metadata entries.
+2025-10-23 01:28:54.996 | INFO     | wa_analyzer.apartment_community_wk6:clean_messages:125 - Filtered 294 messages containing keywords: ['lift', 'camera', 'trap', 'ventilatie']
+2025-10-23 01:28:55.033 | INFO     | wa_analyzer.apartment_community_wk6:build_corpus:141 - Built corpus for 24 authors.
+2025-10-23 01:28:55.033 | INFO     | wa_analyzer.apartment_community_wk6:compute_pca:153 - Total text chunks: 503
+2025-10-23 01:28:55.664 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:222 - PCA plot saved to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/pca_Gender.png
+2025-10-24 02:01:45.549 | INFO     | wa_analyzer.apartment_community_wk6:load_data:89 - Loaded 4565 messages and 75 author metadata entries.
+2025-10-24 02:01:45.572 | INFO     | wa_analyzer.apartment_community_wk6:clean_messages:125 - Filtered 294 messages containing keywords: ['lift', 'camera', 'trap', 'ventilatie']
+2025-10-24 02:01:45.609 | INFO     | wa_analyzer.apartment_community_wk6:build_corpus:141 - Built corpus for 24 authors.
+2025-10-24 02:01:45.609 | INFO     | wa_analyzer.apartment_community_wk6:compute_pca:153 - Total text chunks: 503
+2025-10-24 02:01:46.228 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:222 - PCA plot saved to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/pca_Gender.png
+2025-10-24 02:08:51.520 | INFO     | wa_analyzer.apartment_community_wk6:load_data:89 - Loaded 4565 messages and 75 author metadata entries.
+2025-10-24 02:08:51.627 | INFO     | wa_analyzer.apartment_community_wk6:clean_messages:125 - Filtered 294 messages containing keywords: ['lift', 'camera', 'trap', 'ventilatie']
+2025-10-24 02:08:51.697 | INFO     | wa_analyzer.apartment_community_wk6:build_corpus:141 - Built corpus for 24 authors.
+2025-10-24 02:08:51.697 | INFO     | wa_analyzer.apartment_community_wk6:compute_pca:153 - Total text chunks: 503
+2025-10-24 02:08:52.494 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:222 - PCA plot saved to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/pca_Gender.png
+2025-10-24 02:08:52.662 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:228 - Saved plot to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/wk6_pca_modelling.png
+2025-10-24 08:29:06.127 | INFO     | wa_analyzer.apartment_community_wk6:load_data:89 - Loaded 4565 messages and 75 author metadata entries.
+2025-10-24 08:29:06.153 | INFO     | wa_analyzer.apartment_community_wk6:clean_messages:125 - Filtered 294 messages containing keywords: ['lift', 'camera', 'trap', 'ventilatie']
+2025-10-24 08:29:06.191 | INFO     | wa_analyzer.apartment_community_wk6:build_corpus:141 - Built corpus for 24 authors.
+2025-10-24 08:29:06.191 | INFO     | wa_analyzer.apartment_community_wk6:compute_pca:153 - Total text chunks: 503
+2025-10-24 08:29:06.910 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:222 - PCA plot saved to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/pca_Gender.png
+2025-10-24 08:29:07.054 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:228 - Saved plot to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/wk6_pca_modelling.png
+2025-10-24 08:33:45.119 | INFO     | wa_analyzer.apartment_community_wk6:load_data:89 - Loaded 4565 messages and 75 author metadata entries.
+2025-10-24 08:33:45.148 | INFO     | wa_analyzer.apartment_community_wk6:clean_messages:125 - Filtered 294 messages containing keywords: ['lift', 'camera', 'trap', 'ventilatie']
+2025-10-24 08:33:45.194 | INFO     | wa_analyzer.apartment_community_wk6:build_corpus:141 - Built corpus for 24 authors.
+2025-10-24 08:33:45.194 | INFO     | wa_analyzer.apartment_community_wk6:compute_pca:153 - Total text chunks: 503
+2025-10-24 08:33:45.886 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:222 - PCA plot saved to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/pca_Gender.png
+2025-10-24 08:33:46.023 | INFO     | wa_analyzer.apartment_community_wk6:plot_pca:228 - Saved plot to /Users/luiginocleofa/1_HU_Post_HBO_AI/DAV/MADS-DAV/img/wk6_pca_modelling.png
