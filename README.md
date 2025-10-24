@@ -3,7 +3,6 @@ Periode A (2025/26)<br>
 Weekly assignments are added to dedicated feature branch 'hu_dav_lcleofa' in GitHub.
 
 This is the repository for the Master of Applied Data Science course "Data Analysis & Visualisation" at Hogeschool Utrecht.<br>
-The repo is forked from https://github.com/raoulg/MADS-DAV.
 
 # Table of Contents
 - [Background](#background)
