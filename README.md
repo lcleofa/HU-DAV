@@ -3,7 +3,7 @@ Periode A (2025/26)<br>
 
 This is the repository for the Master of Applied Data Science course "Data Analysis & Visualisation" at Hogeschool Utrecht.<br>
 
-This is the documentation for the weekly assignments. 
+This readme contains the documentation for the weekly assignments. 
 
 # Table of Contents
 - [Background](#background)
