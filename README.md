@@ -32,9 +32,9 @@ References python scripts:
 |------|--------------------|-------------------------------|-------|
 | 2    | Comparing categories| apartment_community_wk2.py    |   wk2_lift_gesprekken_comparing_categories.png    |
 | 3    | Time               | apartment_community_wk3.py    |   wk3_beveiliging_camera_time.png    |
-| 4    | —                  | apartment_community_wk4.py    |    wk4_log_berichtlengtes_distributions.png   |
-| 5    | —                  | apartment_community_wk5.py    |     wk5_aantal_berichten_per_etage_relationship.png  |
-| 6    | —                  | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png |
+| 4    | distributions                  | apartment_community_wk4.py    |    wk4_log_berichtlengtes_distributions.png   |
+| 5    | relationship                 | apartment_community_wk5.py    |     wk5_aantal_berichten_per_etage_relationship.png  |
+| 6    | pca modelling                  | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png |
 | 7    | Final              | apartment_community_final.py  |       |
 
 
