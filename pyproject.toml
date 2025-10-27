@@ -25,6 +25,7 @@ license = {text = "MIT"}
 "analyzer" = "wa_analyzer.preprocess:main"
 "graphdashboard" = "wa_analyzer.network_cli:main"
 "apartment_community_wk2" = "wa_analyzer.apartment_community_wk2:main"
+"apartment_community_wk2_3" = "wa_analyzer.apartment_community_wk2_3:main"
 "apartment_community_wk3" = "wa_analyzer.apartment_community_wk3:main"
 "apartment_community_wk4" = "wa_analyzer.apartment_community_wk4:main"
 "apartment_community_wk5" = "wa_analyzer.apartment_community_wk5:main"

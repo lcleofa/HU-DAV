@@ -14,56 +14,18 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 sns.set_theme(style="whitegrid")
 
-
-# ====================================================
-# --- Config Loader ---
-# ====================================================
-class ConfigLoader:
-    def __init__(self, config_path: Path):
-        self.config_path = config_path
-        self.config = None
-
-    def load(self):
-        with self.config_path.open("rb") as f:
-            self.config = tomllib.load(f)
-        return self.config
+from logger_setup import LoggerSetup
+from config_loader import ConfigLoader
 
 
 # ====================================================
-# --- Logger Setup ---
+# --- Data Handler with Metadata merging ---
 # ====================================================
-class LoggerSetup:
-    """Configure Loguru logging."""
-
-    def __init__(self, config):
-        self.log_dir = Path(config["logging"]["logdir"]).resolve()
-        self.log_dir.mkdir(parents=True, exist_ok=True)
-
-    def setup(self):
-        logger.remove()
-        logger.add(sys.stderr, level="INFO")
-        logfile = self.log_dir / "logfile.log"
-        logger.add(
-            logfile,
-            rotation="10 MB",
-            retention="30 days",
-            compression="zip",
-            level="DEBUG",
-            enqueue=True
-        )
-        return logger
-
-
-# ====================================================
-# --- Data Handler ---
-# ====================================================
-class DataHandler:
+class DataHandler_merge_meta:
     def __init__(self, config: dict):
-        # def __init__(self, config: dict, metadata_file: str = "nested_users5.json"):
         self.project_root = Path.cwd()
         self.datafile = self.project_root / config["processed"] / config["current"]
         self.metadata_file = self.project_root / config["meta"] / config["resident_metadata"]
-        # self.metadata_file = Path(metadata_file).resolve()
 
     def load_data(self):
         if not self.datafile.exists():
@@ -82,7 +44,7 @@ class DataHandler:
         )
         df_merged = df.merge(author_info_df, on="author", how="left")
         logger.info("Data successfully loaded and merged with metadata.")
-        return df_merged
+        return df_merged, author_info_df
 
 
 # ====================================================
@@ -170,11 +132,16 @@ def main():
     config = ConfigLoader(config_path).load()
 
     # --- Setup logger ---
-    logger_obj = LoggerSetup(config).setup()
+    log_filename = "wk5_relationship.log"
+    logger_obj = LoggerSetup(config, log_filename).setup()
+    logger.info("Logger initialized successfully.")
 
     # --- Load data ---
-    data_handler = DataHandler(config)
-    df = data_handler.load_data()
+    data_handler = DataHandler_merge_meta(config)
+    df, author_info_df = data_handler.load_data()
+
+
+    logger.info("Data successfully loaded and merged with metadata.")
 
     # Load keyword from command-line argument with restricted choices
     parser = argparse.ArgumentParser(description="Analyze messages by keyword")
