@@ -99,6 +99,9 @@ keyword options: ["lift", "schoon", "camera"]<br>
 Example
 ```bash
 uv run apartment_community_wk2 --keyword lift
+
+uv run src/wa_analyzer/apartment_community_wk2.py --keyword lift
+
 ```
 
 ### week 3
@@ -106,21 +109,31 @@ keyword options: ["lift", "schoon", "camera", "dank"],<br>
 Example
 ```bash
 uv run apartment_community_wk3
+
+uv run src/wa_analyzer/apartment_community_wk3.py
+
 ```
 
 ### week 4
 ```
 uv run apartment_community_wk4 --top 5
+
+uv run src/wa_analyzer/apartment_community_wk4.py --top 5
 ```
 
 ### week 5
 ```
-uv run  apartment_community_wk5 --keyword lift
+uv run apartment_community_wk5 --keyword lift
+
+uv run src/wa_analyzer/apartment_community_wk5.py --keyword lift
 ```
 
 ### week 6
 ```
-uv run  apartment_community_wk6 --label Gender --keywords lift camera trap ventilatie
+uv run apartment_community_wk6 --label Gender --keywords lift camera trap ventilatie
+
+uv run src/wa_analyzer/apartment_community_wk6.py --label Gender --keywords lift camera trap ventilatie
+
 ```
 
 ## Logs
