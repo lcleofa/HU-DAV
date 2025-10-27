@@ -7,36 +7,10 @@ import matplotlib.pyplot as plt
 from loguru import logger
 import tomllib
 
-
-class ConfigLoader:
-    def __init__(self, config_path: Path):
-        self.config_path = config_path
-        self.config = None
-
-    def load(self):
-        with self.config_path.open("rb") as f:
-            self.config = tomllib.load(f)
-        return self.config
-    
-class LoggerSetup:
-    """Configure Loguru logging."""
-    def __init__(self, config):
-        self.log_dir = Path(config["logging"]["logdir"]).resolve()
-        self.log_dir.mkdir(parents=True, exist_ok=True)
-
-    def setup(self):
-        logger.remove()
-        logger.add(sys.stderr, level="INFO")
-        logfile = self.log_dir / "logfile.log"
-        logger.add(
-            logfile,
-            rotation="10 MB",
-            retention="30 days",
-            compression="zip",
-            level="DEBUG",
-            enqueue=True
-        )
-        return logger       
+from logger_setup import LoggerSetup
+from config_loader import ConfigLoader
+from data_handler_meta_data import DataHandler
+       
 class CameraAnalysis:
     """Analyze messages containing 'camera' and plot results."""
     def __init__(self, df: pd.DataFrame, keywords: list[str] = ["camera"]):
@@ -146,16 +120,18 @@ def main():
     config_path = Path("config.toml").resolve()
     config = ConfigLoader(config_path).load()
 
-    # --- Setup logger ---
-    logger_obj = LoggerSetup(config).setup()
+
+    # # --- Setup logger ---
+    log_filename = "wk3_time_series.log"
+    logger_obj = LoggerSetup(config, log_filename).setup()
+    logger.info("Logger initialized successfully.")
+
 
     # --- Load data ---
-    datafile = (Path(config["processed"]) / config["current"]).resolve()
-    if not datafile.exists():
-        logger_obj.warning("Datafile does not exist. Run preprocess.py first.")
-        return
-
-    df = pd.read_parquet(datafile)
+    data_handler = DataHandler(config)
+    logger.info(f"Loading data from {data_handler.datafile}")
+    df = data_handler.load_data()
+    df, author_info_df = data_handler.load_data()
 
     img_dir = Path.cwd() / "img"
 

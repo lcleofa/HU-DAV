@@ -5,12 +5,8 @@ __pycache__
 .ruff_cache
 .mypy_cache
 data/raw/
-meta/
 data/backup/
 notebooks_gino/
-*.parquet
-data/processed/*.csv
-data/processed/*.parq
 config/**
 *.log
 *.pptx
@@ -22,9 +18,9 @@ config/**
 **/personal.ipynb
 config.toml
 .aider*
-data/processed/**
 data/Gino/**
 dev/
+dist/
 Gino/
 .current_values.json
 Gino_notes.md
@@ -34,3 +30,4 @@ demo_apartment_community.py
 scratchPad.txt
 references/
 presentations/
+src/wa_analyzer/__pycache__

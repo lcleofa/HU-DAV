@@ -15,80 +15,13 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import manhattan_distances
 from sklearn.decomposition import PCA
 
+from logger_setup import LoggerSetup
+from config_loader import ConfigLoader
+from data_handler_meta_data import DataHandler
+
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 sns.set_theme(style="whitegrid")
-
-
-# ====================================================
-# --- Config Loader ---
-# ====================================================
-class ConfigLoader:
-    def __init__(self, config_path: Path):
-        self.config_path = config_path
-        self.config = None
-
-    def load(self):
-        with self.config_path.open("rb") as f:
-            self.config = tomllib.load(f)
-        return self.config
-
-
-# ====================================================
-# --- Logger Setup ---
-# ====================================================
-class LoggerSetup:
-    """Configure Loguru logging."""
-
-    def __init__(self, config):
-        self.log_dir = Path(config["logging"]["logdir"]).resolve()
-        self.log_dir.mkdir(parents=True, exist_ok=True)
-
-    def setup(self):
-        logger.remove()
-        logger.add(sys.stderr, level="INFO")
-        logfile = self.log_dir / "clustering_log.log"
-        logger.add(
-            logfile,
-            rotation="10 MB",
-            retention="30 days",
-            compression="zip",
-            level="DEBUG",
-            enqueue=True
-        )
-        return logger
-
-
-# ====================================================
-# --- Data Handler ---
-# ====================================================
-class DataHandler:
-    def __init__(self, config: dict):
-        self.project_root = Path.cwd()
-        self.datafile = self.project_root / config["processed"] / config["current"]
-        self.metadata_file = self.project_root / config["meta"] / config["resident_metadata"]
-
-    def load_data(self):
-        if not self.datafile.exists():
-            raise FileNotFoundError(
-                f"{self.datafile} does not exist. Run src/preprocess.py first and check the timestamp!"
-            )
-
-        # Load WhatsApp messages
-        df = pd.read_parquet(self.datafile)
-
-        # Load author metadata
-        with open(self.metadata_file, "r") as f:
-            nested_users = json.load(f)
-
-        author_info_df = (
-            pd.DataFrame(nested_users)
-            .T.reset_index()
-            .rename(columns={"index": "author"})
-        )
-
-        logger.info(f"Loaded {len(df)} messages and {len(author_info_df)} author metadata entries.")
-
-        return df, author_info_df
 
 
 # ====================================================
@@ -254,7 +187,9 @@ def main():
     config = ConfigLoader(config_path).load()
 
     # --- Setup logger ---
-    logger_obj = LoggerSetup(config).setup()
+    log_filename = "wk6_pca_modelling.log"
+    logger_obj = LoggerSetup(config, log_filename).setup()
+    logger.info("Logger initialized successfully.")
 
     # --- Load data and metadata ---
     data_handler = DataHandler(config)

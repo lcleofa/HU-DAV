@@ -12,50 +12,10 @@ import warnings
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+from logger_setup import LoggerSetup
+from config_loader import ConfigLoader
+from data_handler_meta_data import DataHandler
 
-class ConfigLoader:
-    def __init__(self, config_path: Path):
-        self.config_path = config_path
-
-    def load(self):
-        with self.config_path.open("rb") as f:
-            config = tomllib.load(f)
-        return config
-
-
-# ====================================================
-# --- Data Handler ---
-# ====================================================
-class DataHandler:
-    def __init__(self, config: dict):
-        self.project_root = Path.cwd()
-        self.datafile = self.project_root / config["processed"] / config["current"]
-        self.metadata_file = self.project_root / config["meta"] / config["resident_metadata"]
-
-    def load_data(self):
-        if not self.datafile.exists():
-            raise FileNotFoundError(
-                f"{self.datafile} does not exist. Run src/preprocess.py first and check the timestamp!"
-            )
-
-        # Load WhatsApp messages
-        df = pd.read_parquet(self.datafile)
-
-        # Load author metadata
-        with open(self.metadata_file, "r") as f:
-            nested_users = json.load(f)
-
-        author_info_df = (
-            pd.DataFrame(nested_users)
-            .T
-            .reset_index()
-            .rename(columns={"index": "author"})
-            [['author', 'Name', 'Gender']]
-        )
-
-        logger.info(f"Loaded {len(df)} messages and {len(author_info_df)} author metadata entries.")
-
-        return df, author_info_df
 
 class MessageAnalysis:
     def __init__(self, df: pd.DataFrame, author_info_df: pd.DataFrame, img_dir: Path, top_n: int):
@@ -127,19 +87,21 @@ class MessageAnalysis:
 
 
 def main():
-    # Logging
-    log_file_path = Path.cwd() / "logs" / "logfile.log"
-    log_file_path.parent.mkdir(parents=True, exist_ok=True)
-    logger.add(log_file_path, rotation="10 MB", retention="10 days", level="INFO", encoding="utf-8")
+
+    # --- Load config ---
+    config_path = Path("config.toml").resolve()
+    config = ConfigLoader(config_path).load()
+
+    # Setup logger from utilities (with custom filename)
+    log_filename = "wk4_distributions.log"
+    logger_obj = LoggerSetup(config, log_filename).setup()
+    logger.info("Logger initialized successfully.")
+
 
     # Command-line arguments
     parser = argparse.ArgumentParser(description="Analyze top authors by message length")
     parser.add_argument("--top", type=int, default=10, help="Number of top authors to analyze")
     args = parser.parse_args()
-
-    # --- Load config ---
-    config_path = Path("config.toml").resolve()
-    config = ConfigLoader(config_path).load()
 
     # --- Load data and metadata ---
     data_handler = DataHandler(config)

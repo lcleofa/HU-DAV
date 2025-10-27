@@ -1,0 +1,677 @@
+{
+  "bejeweled-beluga": {
+    "Name": "JWF",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 226,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "billowy-meerkat": {
+    "Name": "CL",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 242,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "bold-bison": {
+    "Name": "C",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 201,
+    "Floor_nr": 7,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "bouncy-worm": {
+    "Name": "F",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 238,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "cackling-eland": {
+    "Name": "MS",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 241,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "captivating-dove": {
+    "Name": "B",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 206,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "carefree-lark": {
+    "Name": "MK",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 247,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "cheerful-boar": {
+    "Name": "RF",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 223,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "cheerful-mule": {
+    "Name": "JD",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 232,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "chuckling-stork": {
+    "Name": "DB",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 218,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "coltish-owl": {
+    "Name": "LE",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 200,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "cordial-eel": {
+    "Name": "FE",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 226,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "dazzling-curlew": {
+    "Name": "JG",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 235,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "dazzling-yak": {
+    "Name": "SM",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 212,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "dynamic-frog": {
+    "Name": "HG",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 206,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "ebullient-mosquito": {
+    "Name": "TA",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 215,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "elaborate-jay": {
+    "Name": "J.",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 208,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "entertaining-pig": {
+    "Name": "CH",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 204,
+    "Floor_nr": 2,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "ethereal-lapwing": {
+    "Name": "JKL",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 240,
+    "Floor_nr": 6,
+    "Nr_rooms": 3,
+    "Older_then_65": true
+  },
+  "eye-catching-hare": {
+    "Name": "AQ",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 239,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "eye-catching-okapi": {
+    "Name": "LM",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 203,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "flecked-beluga": {
+    "Name": "TH",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 203,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "flexible-platypus": {
+    "Name": "M",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 222,
+    "Floor_nr": 8,
+    "Nr_rooms": 3,
+    "Older_then_65": true
+  },
+  "freckled-wolverine": {
+    "Name": "SL",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 229,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "funny-swallow": {
+    "Name": "XK",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 211,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "gaudy-whale": {
+    "Name": "AV",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 202,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "giddy-tardigrade": {
+    "Name": "Y",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 239,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "goofy-tiger": {
+    "Name": "jkf",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 220,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "happy-beaver": {
+    "Name": "IA",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 219,
+    "Floor_nr": 7,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "hilarious-dogfish": {
+    "Name": "AKT",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 209,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "intense-toad": {
+    "Name": "H",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 222,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "joyful-okapi": {
+    "Name": "R.A.W.",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 231,
+    "Floor_nr": 3,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "joyful-salmon": {
+    "Name": "MI",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 244,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "kooky-tapir": {
+    "Name": "Z",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 208,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "limber-ostrich": {
+    "Name": "MT",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 233,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "loony-albatross": {
+    "Name": "RS",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 244,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "lustrous-reindeer": {
+    "Name": "JFX",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 219,
+    "Floor_nr": 5,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "merry-salaMaleder": {
+    "Name": "ED",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 208,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "mind-blowing-kudu": {
+    "Name": "AS",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 240,
+    "Floor_nr": 6,
+    "Nr_rooms": 3,
+    "Older_then_65": true
+  },
+  "multicolored-dogfish": {
+    "Name": "TSs",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 209,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "nimble-raven": {
+    "Name": "ER",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 233,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "nutty-chamois": {
+    "Name": "KG",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 229,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "peculiar-ape": {
+    "Name": "KF",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 247,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "pellucid-quelea": {
+    "Name": "PU",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 207,
+    "Floor_nr": 3,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "peppy-badger": {
+    "Name": "VB",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 205,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "peppy-rat": {
+    "Name": "NM",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 236,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "piebald-jay": {
+    "Name": "JA",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 205,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "piebald-rhinoceros": {
+    "Name": "PJ",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 202,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "psychedelic-boar": {
+    "Name": "GF",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 238,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "quick-chamois": {
+    "Name": "GA",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 229,
+    "Floor_nr": 2,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "radiant-coyote": {
+    "Name": "UI",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 220,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "resplendent-aardwolf": {
+    "Name": "ZX",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 226,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "rollicking-ostrich": {
+    "Name": "DL",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 224,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "saturated-whistling duck": {
+    "Name": "OP",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 210,
+    "Floor_nr": 4,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "silky-lapwing": {
+    "Name": "WS",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 213,
+    "Floor_nr": 5,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "snorting-ibex": {
+    "Name": "PY",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 200,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "soft-eland": {
+    "Name": "OI",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 210,
+    "Floor_nr": 4,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "sparkly-mole": {
+    "Name": "SF",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 237,
+    "Floor_nr": 5,
+    "Nr_rooms": 3,
+    "Older_then_65": false
+  },
+  "splattered-barracuda": {
+    "Name": "FV",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 234,
+    "Floor_nr": 4,
+    "Nr_rooms": 3,
+    "Older_then_65": true
+  },
+  "springy-hare": {
+    "Name": "WM",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 214,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "stippled-pig": {
+    "Name": "PW",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 217,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "sudsy-eland": {
+    "Name": "BC",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 216,
+    "Floor_nr": 6,
+    "Nr_rooms": 3,
+    "Older_then_65": true
+  },
+  "sudsy-gazelle": {
+    "Name": "SL",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 245,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "sudsy-jellyfish": {
+    "Name": "JJ",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 214,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "sunny-gazelle": {
+    "Name": "CA",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 223,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "tittering-fennec fox": {
+    "Name": "QP",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 220,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "upbeat-pigeon": {
+    "Name": "MX",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 235,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "vivid-rhinoceros": {
+    "Name": "LK",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 239,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "waggish-porcupine": {
+    "Name": "AA",
+    "Gender": "Female",
+    "Entrance_nr": 2,
+    "Unit_nr": 245,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "wispy-reindeer": {
+    "Name": "BB",
+    "Gender": "Male",
+    "Entrance_nr": 2,
+    "Unit_nr": 230,
+    "Floor_nr": 3,
+    "Nr_rooms": 5,
+    "Older_then_65": true
+  },
+  "zany-trout": {
+    "Name": "CC",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 212,
+    "Floor_nr": 5,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "cackling-wasp": {
+    "Name": "DD",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 209,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "chipper-quetzal": {
+    "Name": "SX",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 217,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "flecked-pheasant": {
+    "Name": "IE",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 247,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "riotous-wombat": {
+    "Name": "XC",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 245,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  }
+}
