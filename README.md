@@ -1,5 +1,8 @@
 Student: Gino Cleofa<br>
-Periode A (2025/26)<br>
+Periode: A (2025/26)<br>
+Cursus: Data Analysis & Visualisation<br>
+Studentnummer: 1908524v
+
 
 This is the repository for the Master of Applied Data Science course "Data Analysis & Visualisation" at Hogeschool Utrecht.<br>
 

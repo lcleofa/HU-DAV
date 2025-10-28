@@ -75,7 +75,7 @@ class EmojiByFloorAnalysis:
         )
 
         # --- Save plot ---
-        save_path = self.img_dir / "wk2_emoji_verdieping_comparing_categories.png"
+        save_path = self.img_dir / "wk2_emojies_verdieping_comparing_categories.png"
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
         plt.close()
         logger.info(f"Saved emoji usage plot to {save_path}")
