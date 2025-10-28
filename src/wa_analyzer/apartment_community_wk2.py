@@ -27,6 +27,12 @@ class EmojiByFloorAnalysis:
         if "Floor_nr" not in self.df.columns or "has_emoji" not in self.df.columns:
             logger.error("Required columns 'Floor_nr' or 'has_emoji' are missing in the DataFrame.")
             return
+        
+        # --- Round Floor_nr to integer ---
+        # self.df["Floor_nr"] = self.df["Floor_nr"].astype(int)
+
+        self.df = self.df[self.df["Floor_nr"].notna()]
+        self.df["Floor_nr"] = self.df["Floor_nr"].astype(int)
 
         # Group by floor and count messages with emojis
         emoji_by_floor = (
@@ -69,7 +75,7 @@ class EmojiByFloorAnalysis:
         )
 
         # --- Save plot ---
-        save_path = self.img_dir / "wk2_emoji_usage_by_floor.png"
+        save_path = self.img_dir / "wk2_emoji_verdieping_comparing_categories.png"
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
         plt.close()
         logger.info(f"Saved emoji usage plot to {save_path}")
