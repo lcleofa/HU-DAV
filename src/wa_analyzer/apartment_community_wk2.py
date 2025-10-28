@@ -2,116 +2,150 @@ import argparse
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 from pathlib import Path
-import tomllib
 from loguru import logger
+import json
 
 from logger_setup import LoggerSetup
-
 from config_loader import ConfigLoader
 
-from data_handler_meta_data import DataHandler
-
-
 # ====================================================
-# --- Message Analysis ---
+# --- Emoji Usage Analysis by Floor ---
 # ====================================================
-class MessageAnalysis:
-    """Analyze and visualize message trends for a keyword."""
+class EmojiByFloorAnalysis:
+    """Analyze and visualize emoji usage per floor in WhatsApp data."""
 
-    def __init__(self, df: pd.DataFrame, keyword: str, img_dir: Path):
+    def __init__(self, df: pd.DataFrame, img_dir: Path):
         self.df = df
-        self.keyword = keyword
         self.img_dir = img_dir
         self.img_dir.mkdir(parents=True, exist_ok=True)
 
-    def plot_trend(self):
-        """Plot keyword trends over time."""
-        keyword_df = self.df[self.df["message"].str.contains(self.keyword, case=False)]
+    def plot_emoji_usage(self):
+        """Create a bar plot showing emoji usage per floor."""
+        logger.info("Preparing emoji usage data per floor...")
 
-        trend_df = keyword_df.set_index("timestamp").resample("M").size().reset_index(name="count")
-
-        if trend_df.empty:
-            logger.warning(f"No messages found for keyword '{self.keyword}'.")
+        if "Floor_nr" not in self.df.columns or "has_emoji" not in self.df.columns:
+            logger.error("Required columns 'Floor_nr' or 'has_emoji' are missing in the DataFrame.")
             return
 
-        max_idx = trend_df["count"].idxmax()
-        max_row = trend_df.loc[max_idx]
-        max_count = max_row["count"]
-
-        plt.figure(figsize=(12, 6))
-
-        bar_colors = ["gray"] * len(trend_df)
-        bar_colors[max_idx] = "orange"
-
-        plt.bar(trend_df["timestamp"], trend_df["count"], color=bar_colors, width=20, label="Aantal berichten")
-        plt.scatter(max_row["timestamp"], max_count, color="red", s=100, zorder=5, label="Piek")
-
-        avg_count = trend_df["count"].mean()
-        plt.axhline(y=avg_count, color="blue", linestyle="--", linewidth=1.5, label=f"Gemiddeld ({avg_count:.1f})")
-
-        plt.annotate(
-            f"Vervanging {self.keyword} deurdrangers",
-            xy=(max_row["timestamp"], max_count),
-            xytext=(max_row["timestamp"] + pd.DateOffset(months=2), max_count),
-            arrowprops=dict(arrowstyle="->", color="red"),
-            va="center",
-            color="red"
+        # Group by floor and count messages with emojis
+        emoji_by_floor = (
+            self.df.groupby("Floor_nr")["has_emoji"]
+            .sum()
+            .reset_index()
+            .rename(columns={"has_emoji": "emoji_count"})
+            .sort_values("Floor_nr")
         )
 
-        plt.xlabel("Tijd")
-        plt.ylabel(f"Aantal '{self.keyword}' berichten")
-        plt.title(f"'{self.keyword}' gesprekken over de jaren heen")
+        if emoji_by_floor.empty:
+            logger.warning("No emoji data found in dataset.")
+            return
 
-        ax = plt.gca()
-        ax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))
-        ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
-        plt.xticks(rotation=45)
-        plt.legend()
+        # Identify floor with highest emoji count
+        max_floor = emoji_by_floor.loc[emoji_by_floor["emoji_count"].idxmax(), "Floor_nr"]
+        max_value = emoji_by_floor["emoji_count"].max()
 
-        save_path = self.img_dir / f"wk2_{self.keyword}_gesprekken_comparing_categories.png"
-        plt.savefig(save_path, bbox_inches="tight")
+        # Set color palette (highlight max)
+        colors = ["red" if floor == max_floor else "#86b9e0" for floor in emoji_by_floor["Floor_nr"]]
+
+        # --- Plot ---
+        plt.figure(figsize=(10, 6))
+        sns.barplot(data=emoji_by_floor, x="Floor_nr", y="emoji_count", palette=colors)
+
+        plt.title("Aantal berichten met emoji per verdieping", fontsize=16, fontweight="bold")
+        plt.xlabel("Verdieping", fontsize=12)
+        plt.ylabel("Aantal berichten met emoji", fontsize=12)
+        plt.xticks(rotation=0)
+        plt.tight_layout()
+
+        # Annotate highest bar
+        plt.text(
+            x=emoji_by_floor.index[emoji_by_floor["Floor_nr"] == max_floor][0],
+            y=max_value + (max_value * 0.02),
+            s=f"Hoogste verdieping {max_floor}",
+            ha="center",
+            color="red",
+            fontweight="bold"
+        )
+
+        # --- Save plot ---
+        save_path = self.img_dir / "wk2_emoji_usage_by_floor.png"
+        plt.savefig(save_path, dpi=300, bbox_inches="tight")
         plt.close()
-        logger.info(f"Saved plot to {save_path}")
+        logger.info(f"Saved emoji usage plot to {save_path}")
+
+
+# ====================================================
+# --- Data Handler ---
+# ====================================================
+class DataHandler:
+    """Load WhatsApp data and resident metadata."""
+
+    def __init__(self, config: dict):
+        self.config = config
+        self.raw_path = Path(config["raw"])
+        self.processed_path = Path(config["processed"])
+        self.meta_path = Path(config["meta"])
+        self.datafile = Path(config["processed"]) / config["current"]
+        self.resident_meta_file = Path(config["meta"]) / config["resident_metadata"]
+
+    def load_data(self):
+        """Load WhatsApp parquet and resident metadata, return merged DataFrame."""
+        # Load WhatsApp data
+        df = pd.read_parquet(self.datafile)
+        logger.info(f"Loaded WhatsApp data with {len(df)} messages.")
+
+        # Ensure has_emoji column exists
+        if "has_emoji" not in df.columns:
+            df["has_emoji"] = df["content"].str.contains(r"[\U0001F300-\U0001FAFF]", regex=True).astype(int)
+            logger.info("'has_emoji' column created based on message content.")
+
+        # Load resident metadata
+        with open(self.resident_meta_file, "r", encoding="utf-8") as f:
+            resident_metadata = json.load(f)
+
+        author_info_df = pd.DataFrame.from_dict(resident_metadata, orient="index")
+        author_info_df.reset_index(inplace=True)
+        author_info_df.rename(columns={"index": "author"}, inplace=True)
+
+        # Merge WhatsApp data with metadata
+        df_merged = df.merge(author_info_df, on="author", how="left")
+        logger.info(f"Merged dataset has {len(df_merged)} messages from {df_merged['author'].nunique()} authors.")
+        return df_merged
 
 
 # ====================================================
 # --- Main ---
 # ====================================================
 def main():
-    parser = argparse.ArgumentParser(description="Analyze messages by keyword")
+    parser = argparse.ArgumentParser(description="Analyze emoji usage by floor")
     parser.add_argument(
-        "--keyword",
+        "--config",
         type=str,
-        required=True,
-        choices=["lift", "schoon", "camera"],
-        help="Keyword to analyze: 'lift', 'schoon' or 'camera'"
+        default="config.toml",
+        help="Path to the configuration file"
     )
     args = parser.parse_args()
 
-    # Load config
-    config_path = Path("config.toml").resolve()
+    # Load configuration
+    config_path = Path(args.config).resolve()
     config = ConfigLoader(config_path).load()
 
-    # Setup logger from utilities (with custom filename)
-    log_filename = "wk2_comparing_categories.log"
-    logger_obj = LoggerSetup(config, log_filename).setup()
+    # Setup logger
+    log_filename = "wk2_emoji_by_floor.log"
+    LoggerSetup(config, log_filename).setup()
     logger.info("Logger initialized successfully.")
 
     # Load data
     data_handler = DataHandler(config)
-    logger.info(f"Loading data from {data_handler.datafile}")
-    df, author_info_df = data_handler.load_data()
+    df_merged = data_handler.load_data()
 
     # Run analysis
-    keyword = args.keyword
-    logger.info(f"=== Analyzing keyword: '{keyword}' ===")
     img_dir = Path.cwd() / "img"
-    analysis = MessageAnalysis(df, keyword, img_dir)
-    analysis.plot_trend()
+    analysis = EmojiByFloorAnalysis(df_merged, img_dir)
+    analysis.plot_emoji_usage()
 
-    logger.info("Done!")
+    logger.info("Emoji usage analysis complete.")
 
 
 if __name__ == "__main__":
