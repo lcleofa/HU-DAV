@@ -1,0 +1,51 @@
+raw = "data/raw"
+processed = "data/processed"
+meta="data/meta"
+input = "_chat.txt"
+current = "whatsapp-20250910-235500.parquet"
+resident_metadata = "resident_metadata.json"
+inputpath = "your-path-here.csv"
+datetime_format = "%d/%m/%Y, %H:%M:%S"
+drop_authors = []
+
+[logging]
+logdir = "logs"
+
+[Images]
+imgdir = "img"
+
+[Analysis]
+top_n = 60
+keywords = ["lift", "schoon", "camera"]
+keywords_wk3 = ["camera"]
+max_question_length = 800  # <-- new configurable threshold
+
+[Analysis.Peaks]
+peak1_threshold = 6000
+peak2_threshold = 12000
+
+
+[Plot]
+title = "Na lange discussies in flatgebouw geven leden alsnog groen licht voor camerabeveiliging"
+line_color = "orange"
+mean_line_color = "blue"
+peak1_color = "red"
+peak2_color = "red"
+last_color = "green"
+font_size = 14
+font_weight = "bold"
+x_tick_interval = 3
+
+[Plot.Annotations]
+peak1_text = "Incidenten \nVeiligheidsoverleg"
+peak2_text = "Camerabeleid \nOffertes"
+last_text = "Besluitvorming\nInstallatie"
+
+
+[Stylometry]
+xmin = 10000
+xmax = 40000
+ymin = -6500
+ymax = -4500
+outlier_threshold_x = 140000
+sample_n = 10

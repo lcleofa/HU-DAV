@@ -16,7 +16,6 @@ config/**
 .lycheecache
 .notebookcache
 **/personal.ipynb
-config.toml
 .aider*
 data/Gino/**
 dev/
