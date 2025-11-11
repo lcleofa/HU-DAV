@@ -2,6 +2,7 @@
 import sys
 import re
 from pathlib import Path
+from duckdb import df
 import pandas as pd
 import matplotlib.pyplot as plt
 from loguru import logger
@@ -12,62 +13,105 @@ from config_loader import ConfigLoader
 from data_handler_meta_data import DataHandler
        
 class CameraAnalysis:
-    """Analyze messages containing 'camera' and plot results."""
-    def __init__(self, df: pd.DataFrame, keywords: list[str] = ["camera"]):
+    """
+    Analyze messages containing specific keywords (default: 'camera') and visualize
+    the total length of these messages per month.
+    
+    Attributes:
+        df (pd.DataFrame): DataFrame containing messages with 'timestamp' and 'message'.
+        keywords (list[str]): List of keywords to search in messages.
+        df_camera (pd.DataFrame): Filtered DataFrame containing only messages with keywords.
+        camera_length_per_month (pd.Series): Aggregated message length per month.
+        peaks (dict): Dictionary of key peaks for annotation.
+    """
+
+    def __init__(self, df: pd.DataFrame, config: dict):
         self.df = df
-        self.keywords = keywords
+        self.keywords = config.get("Analysis", {}).get("keywords_wk3", ["camera"])
+
+        # Strictly read thresholds from config, raise error if missing
+        try:
+            peaks_cfg = config["Analysis"]["Peaks"]
+            self.peak_thresholds = {
+                "peak1_threshold": peaks_cfg["peak1_threshold"],
+                "peak2_threshold": peaks_cfg["peak2_threshold"]
+            }
+        except KeyError as e:
+            raise KeyError(f"Missing configuration in config.toml: {e}")
+
+        self.plot_config = config.get("Plot", {})  # optional
         self.df_camera = None
         self.camera_length_per_month = None
         self.peaks = {}
 
+
     def filter_messages(self):
-        # Create regex pattern for keywords
+        """
+        Filter messages that contain the specified keywords.
+        Adds a new boolean column 'has_camera' and stores filtered DataFrame in self.df_camera.
+        """
         pattern = r"\b" + "|".join(self.keywords) + r"\b"
         self.df["has_camera"] = self.df["message"].str.contains(pattern, flags=re.IGNORECASE, regex=True, na=False)
         self.df_camera = self.df[self.df["has_camera"]].copy()
 
 
     def aggregate_by_month(self):
-        # Drop timezone info to avoid pandas warning
+        """
+        Aggregate the total length of messages containing the keyword(s) per month.
+        Converts the timestamp to naive datetime to avoid pandas timezone warnings.
+        Stores results in self.camera_length_per_month.
+        """
         self.df_camera["timestamp"] = self.df_camera["timestamp"].dt.tz_localize(None)
 
-        # Group by month
         camera_length = self.df_camera.groupby(
             self.df_camera["timestamp"].dt.to_period("M")
         )["message"].apply(lambda x: x.str.len().sum())
 
-        # Convert PeriodIndex to datetime
         self.camera_length_per_month = camera_length.copy()
         self.camera_length_per_month.index = camera_length.index.to_timestamp()
 
 
     def find_peaks(self):
+        """
+        Identify key peaks in message lengths for annotation in plots.
+        Currently detects:
+            - peak1: first value above 6000 (default)
+            - peak2: first value above 12000 (default)
+            - last: last value in the series
+        Stores results in self.peaks as a dictionary with keys 'peak1', 'peak2', and 'last'.
+        """
         series = self.camera_length_per_month
 
-        # Peak 1
-        peak1 = series[series > 6000].idxmin()
+        peak1_val = self.peak_thresholds["peak1_threshold"]
+        peak2_val = self.peak_thresholds["peak2_threshold"]
+
+        peak1 = series[series > peak1_val].idxmin()
         self.peaks["peak1"] = (peak1, series.loc[peak1])
 
-        # Peak 2
-        peak2 = series[series > 12000].idxmin()
+        peak2 = series[series > peak2_val].idxmin()
         self.peaks["peak2"] = (peak2, series.loc[peak2])
 
-        # Last point
         last_idx = series.index[-1]
         last_val = series.iloc[-1]
         self.peaks["last"] = (last_idx, last_val)
 
-    def plot(self, save_dir: Path | None = None):
+    def plot(self, img_dir: Path | None = None):
+        """
+        Plot the aggregated message length per month, annotate peaks, and optionally save the figure.
+        
+        Args:
+            img_dir (Path | None, optional): Directory to save the plot. If None, plot is not saved.
+        """
         series = self.camera_length_per_month
         fig, ax = plt.subplots(figsize=(12, 6))
 
         # Line plot
         ax.plot(series.index, series.values, marker="o", linestyle="-", color="orange")
         ax.set_title(
-        "Na lange discussies in flatgebouw geven leden alsnog groen licht voor camerabeveiliging",
-        fontsize=14,
-        fontweight="bold"
-)
+            "Na lange discussies in flatgebouw geven leden alsnog groen licht voor camerabeveiliging",
+            fontsize=14,
+            fontweight="bold"
+        )
         ax.set_xlabel("Tijd")
         ax.set_ylabel("Lengte berichten over 'camera'")
 
@@ -104,11 +148,9 @@ class CameraAnalysis:
 
         plt.tight_layout()
 
-        # Save plot if save_dir is provided
-        if save_dir:
-            save_dir.mkdir(parents=True, exist_ok=True)
-            file_path = save_dir / f"wk3_beveiliging_{'_'.join(self.keywords)}_time.png"
-
+        if img_dir:
+            img_dir.mkdir(parents=True, exist_ok=True)
+            file_path = img_dir / f"wk3_beveiliging_{'_'.join(self.keywords)}_time.png"
             plt.savefig(file_path, dpi=300)
             logger.info(f"Plot saved to {file_path}")
 
@@ -116,31 +158,40 @@ class CameraAnalysis:
 
 
 def main():
-    # --- Load config ---
+    """
+    Main function to run the camera message analysis workflow.
+    """
+    # --- Load configuration ---
     config_path = Path("config.toml").resolve()
     config = ConfigLoader(config_path).load()
 
-
-    # # --- Setup logger ---
+    # --- Setup logger ---
     log_filename = "wk3_time_series.log"
-    logger_obj = LoggerSetup(config, log_filename).setup()
+    LoggerSetup(config, log_filename).setup()
     logger.info("Logger initialized successfully.")
-
 
     # --- Load data ---
     data_handler = DataHandler(config)
     logger.info(f"Loading data from {data_handler.datafile}")
-    df = data_handler.load_data()
-    df, author_info_df = data_handler.load_data()
+    df, author_info_df = data_handler.load_data()  # <-- Unpack tuple properly
 
-    img_dir = Path.cwd() / "img"
+    # --- Prepare image directory ---
+    img_dir = Path(config["Images"]["imgdir"]).resolve()
+    img_dir.mkdir(parents=True, exist_ok=True)
+    logger.info(f"Image directory set to: {img_dir}")
 
-    # --- Analysis ---
-    analysis = CameraAnalysis(df)
+    # keywords = config["Analysis"]["keywords_wk3"]
+    analysis = CameraAnalysis(df, config=config)
+
+    # --- Run analysis ---
+    # analysis = CameraAnalysis(df)
     analysis.filter_messages()
     analysis.aggregate_by_month()
     analysis.find_peaks()
-    analysis.plot(save_dir=img_dir)
+    analysis.plot(img_dir=img_dir)
+
+    logger.info("Camera analysis completed successfully.")
+
 
 
 if __name__ == "__main__":

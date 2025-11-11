@@ -31,3 +31,4 @@ scratchPad.txt
 references/
 presentations/
 src/wa_analyzer/__pycache__
+*.txt
