@@ -6,7 +6,7 @@
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "billowy-meerkat": {
     "Name": "Cosimo  Latorre",
@@ -15,7 +15,7 @@
     "Unit_nr": 242,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "bold-bison": {
     "Name": "Cora",
@@ -24,7 +24,7 @@
     "Unit_nr": 201,
     "Floor_nr": 1,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "bouncy-worm": {
     "Name": "Fien",
@@ -33,7 +33,7 @@
     "Unit_nr": 238,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "cackling-eland": {
     "Name": "Maya Sermeno",
@@ -42,7 +42,7 @@
     "Unit_nr": 241,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "Algemeen bestuurslid"
   },
   "captivating-dove": {
     "Name": "Bierangna",
@@ -51,7 +51,7 @@
     "Unit_nr": 206,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "carefree-lark": {
     "Name": "Maureen De Keyzer",
@@ -60,7 +60,7 @@
     "Unit_nr": 247,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "cheerful-boar": {
     "Name": "Rinus Friederichs 223",
@@ -69,7 +69,7 @@
     "Unit_nr": 223,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Penningmeester"
   },
   "cheerful-mule": {
     "Name": "Joan Dest",
@@ -78,7 +78,7 @@
     "Unit_nr": 232,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "chuckling-stork": {
     "Name": "Diana Blitz",
@@ -87,7 +87,7 @@
     "Unit_nr": 218,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "coltish-owl": {
     "Name": "Lex Eisenhardt",
@@ -96,7 +96,7 @@
     "Unit_nr": 200,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "cordial-eel": {
     "Name": "Femke",
@@ -105,7 +105,7 @@
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "dazzling-curlew": {
     "Name": "J. Guy",
@@ -114,7 +114,7 @@
     "Unit_nr": 235,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "dazzling-yak": {
     "Name": "Stephanie Mulder",
@@ -123,7 +123,7 @@
     "Unit_nr": 212,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "dynamic-frog": {
     "Name": "Henny Gena ",
@@ -132,7 +132,7 @@
     "Unit_nr": 206,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "ebullient-mosquito": {
     "Name": "Tba 215 Agatha",
@@ -141,7 +141,7 @@
     "Unit_nr": 215,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "elaborate-jay": {
     "Name": "J.",
@@ -150,7 +150,7 @@
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "entertaining-pig": {
     "Name": "Cher",
@@ -159,7 +159,7 @@
     "Unit_nr": 204,
     "Floor_nr": 2,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "ethereal-lapwing": {
     "Name": "Joke",
@@ -168,7 +168,7 @@
     "Unit_nr": 240,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "eye-catching-hare": {
     "Name": "Angelique",
@@ -177,7 +177,7 @@
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "eye-catching-okapi": {
     "Name": "LefMale Kan",
@@ -186,7 +186,7 @@
     "Unit_nr": 203,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "flecked-beluga": {
     "Name": "Tristan Heijdra",
@@ -195,7 +195,7 @@
     "Unit_nr": 203,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "flexible-platypus": {
     "Name": "Margreet Lange",
@@ -204,7 +204,7 @@
     "Unit_nr": 222,
     "Floor_nr": 8,
     "Nr_rooms": 3,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "freckled-wolverine": {
     "Name": "Songül",
@@ -213,7 +213,7 @@
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "funny-swallow": {
     "Name": "Gino Cleofa",
@@ -222,7 +222,7 @@
     "Unit_nr": 211,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "gaudy-whale": {
     "Name": "Alessandro",
@@ -231,7 +231,7 @@
     "Unit_nr": 202,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "giddy-tardigrade": {
     "Name": "Yaron",
@@ -240,7 +240,7 @@
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "goofy-tiger": {
     "Name": "jona de kruif",
@@ -249,7 +249,7 @@
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "Algemeen bestuurslid"
   },
   "happy-beaver": {
     "Name": "Irfan Alic",
@@ -258,7 +258,7 @@
     "Unit_nr": 219,
     "Floor_nr": 7,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "hilarious-dogfish": {
     "Name": "Anita Kieft",
@@ -267,7 +267,7 @@
     "Unit_nr": 209,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "intense-toad": {
     "Name": "HerMale",
@@ -276,7 +276,7 @@
     "Unit_nr": 222,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Voorzitter"
   },
   "joyful-okapi": {
     "Name": "R.A.W.",
@@ -285,7 +285,7 @@
     "Unit_nr": 231,
     "Floor_nr": 3,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "joyful-salmon": {
     "Name": "Mari",
@@ -294,7 +294,7 @@
     "Unit_nr": 244,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "kooky-tapir": {
     "Name": "Z",
@@ -303,7 +303,7 @@
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "limber-ostrich": {
     "Name": "Tim",
@@ -312,7 +312,7 @@
     "Unit_nr": 233,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Algemeen bestuurslid"
   },
   "loony-albatross": {
     "Name": "Roos",
@@ -321,7 +321,7 @@
     "Unit_nr": 244,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "lustrous-reindeer": {
     "Name": "JF",
@@ -330,7 +330,7 @@
     "Unit_nr": 219,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "merry-salaMaleder": {
     "Name": "Estelle Dura",
@@ -339,7 +339,7 @@
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "mind-blowing-kudu": {
     "Name": "Coleta",
@@ -348,7 +348,7 @@
     "Unit_nr": 240,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "multicolored-dogfish": {
     "Name": "Thijmen Santen",
@@ -357,7 +357,7 @@
     "Unit_nr": 209,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "nimble-raven": {
     "Name": "Ellie Togni",
@@ -366,7 +366,7 @@
     "Unit_nr": 233,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "nutty-chamois": {
     "Name": "Eric Laenen",
@@ -375,7 +375,7 @@
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "peculiar-ape": {
     "Name": "NienkeS",
@@ -384,7 +384,7 @@
     "Unit_nr": 247,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "pellucid-quelea": {
     "Name": "Mario",
@@ -393,7 +393,7 @@
     "Unit_nr": 207,
     "Floor_nr": 3,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "peppy-badger": {
     "Name": "Cor ten Bosch",
@@ -402,7 +402,7 @@
     "Unit_nr": 205,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "peppy-rat": {
     "Name": "Cyriel ReestMale",
@@ -411,7 +411,7 @@
     "Unit_nr": 236,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Secretaris"
   },
   "piebald-jay": {
     "Name": "Monique ten Bosch",
@@ -420,7 +420,7 @@
     "Unit_nr": 205,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "piebald-rhinoceros": {
     "Name": "Simo",
@@ -429,7 +429,7 @@
     "Unit_nr": 202,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "psychedelic-boar": {
     "Name": "Eric",
@@ -438,7 +438,7 @@
     "Unit_nr": 238,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "quick-chamois": {
     "Name": "Muhammed Ünal",
@@ -447,7 +447,7 @@
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "radiant-coyote": {
     "Name": "Maaike Françoys",
@@ -456,7 +456,7 @@
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "resplendent-aardwolf": {
     "Name": "Ids Fijen",
@@ -465,7 +465,7 @@
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "rollicking-ostrich": {
     "Name": "Suze Zeegers",
@@ -474,7 +474,7 @@
     "Unit_nr": 224,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "saturated-whistling duck": {
     "Name": "Santiago",
@@ -483,7 +483,7 @@
     "Unit_nr": 210,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "silky-lapwing": {
     "Name": "Dylan",
@@ -492,7 +492,7 @@
     "Unit_nr": 213,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "snorting-ibex": {
     "Name": "Machteld BouMale",
@@ -501,7 +501,7 @@
     "Unit_nr": 200,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "soft-eland": {
     "Name": "Jordy Van Rookhuizen",
@@ -510,7 +510,7 @@
     "Unit_nr": 210,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "sparkly-mole": {
     "Name": "Stephan Ceuppens",
@@ -519,7 +519,7 @@
     "Unit_nr": 237,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "splattered-barracuda": {
     "Name": "Gre",
@@ -528,7 +528,7 @@
     "Unit_nr": 234,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "springy-hare": {
     "Name": "Wil Pouw",
@@ -537,7 +537,7 @@
     "Unit_nr": 214,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "stippled-pig": {
     "Name": "Dick",
@@ -546,7 +546,7 @@
     "Unit_nr": 217,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "sudsy-eland": {
     "Name": "Ineke",
@@ -555,7 +555,7 @@
     "Unit_nr": 216,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "sudsy-gazelle": {
     "Name": "Enrico",
@@ -564,7 +564,7 @@
     "Unit_nr": 245,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "sudsy-jellyfish": {
     "Name": "Jos BuurMale",
@@ -573,7 +573,7 @@
     "Unit_nr": 214,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Commissielid"
   },
   "sunny-gazelle": {
     "Name": "Colinda Kooter",
@@ -582,7 +582,7 @@
     "Unit_nr": 223,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "tittering-fennec fox": {
     "Name": "Johan",
@@ -591,7 +591,7 @@
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "upbeat-pigeon": {
     "Name": "Mirella Habits",
@@ -600,7 +600,7 @@
     "Unit_nr": 235,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "vivid-rhinoceros": {
     "Name": "Martin",
@@ -609,7 +609,7 @@
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "Commissielid"
   },
   "waggish-porcupine": {
     "Name": "Annelien Berends",
@@ -618,7 +618,7 @@
     "Unit_nr": 245,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "wispy-reindeer": {
     "Name": "Tarcis Schipper",
@@ -627,7 +627,7 @@
     "Unit_nr": 230,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_65": true
+    "Board_function": "none"
   },
   "zany-trout": {
     "Name": "Henk Habits",
@@ -636,7 +636,7 @@
     "Unit_nr": 212,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "Commissielid"
   },
   "cackling-wasp": {
     "Name": "Paul Albada Jelgersma",
@@ -645,7 +645,7 @@
     "Unit_nr": 209,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "chipper-quetzal": {
     "Name": "Siam Habema",
@@ -654,7 +654,7 @@
     "Unit_nr": 217,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "flecked-pheasant": {
     "Name": "Daniel",
@@ -663,7 +663,7 @@
     "Unit_nr": 247,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   },
   "riotous-wombat": {
     "Name": "Umt",
@@ -672,6 +672,6 @@
     "Unit_nr": 245,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_65": false
+    "Board_function": "none"
   }
 }

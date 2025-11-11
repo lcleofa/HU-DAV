@@ -1,12 +1,14 @@
 Student: Gino Cleofa<br>
 Periode: A (2025/26)<br>
 Cursus: Data Analysis & Visualisation<br>
-Studentnummer: 1908524v
+Studentnummer: 1908524<br>
 
 
 This is the repository for the Master of Applied Data Science course "Data Analysis & Visualisation" at Hogeschool Utrecht.<br>
 
-This readme contains the documentation for the weekly assignments. 
+This readme contains the documentation for the weekly assignments.<br>
+For each weekly assignments a python script(s) will generate plot(s) for related topic.
+This can be depicted in an image file or a streamlit webapp.  
 
 # Table of Contents
 - [Background](#background)
@@ -18,76 +20,79 @@ This readme contains the documentation for the weekly assignments.
 
 # Background
 For this course, I am analyzing a WhatsApp group export from my apartment building.<br>
-The project focuses on three main categories of discussion:
+The project focuses on following categories:
+- Whatsapp activities by authors 
 - Facilities
-- Hygiene
-- Security
 
-Each category is linked to a specific keyword, which serves as a parameter for the analysis script.<br>
-For example, in the Facilities category the keyword can be “lift.”
+<br>
 
 
 # Assignments
 
-References python scripts:
+References python scripts and visualization image files:
 
-| Week | Subject       | Script                        | Image |
-|------|--------------------|-------------------------------|-------|
-| 2    | Comparing categories| apartment_community_wk2.py    |   wk2_lift_gesprekken_comparing_categories.png    |
-| 3    | Time               | apartment_community_wk3.py    |   wk3_beveiliging_camera_time.png    |
-| 4    | Distributions                  | apartment_community_wk4.py    |    wk4_log_berichtlengtes_distributions.png   |
-| 5    | Relationship                 | apartment_community_wk5.py    |     wk5_aantal_berichten_per_etage_relationship.png  |
-| 6    | Modelling with PCA                 | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png |
-| 7    | Final              | apartment_community_final.py  |       |
+| Week | Topic       | Script                        | Image(s) | Webapp|
+|------|--------------------|-------------------------------|-------|-------|
+| 2    | Comparing categories| apartment_community_wk2.py    |   wk2_emoji_bestuursfunctie_comparing_categories.png <br>  wk2_berichtlengte_bestuursfunctie_comparing_categories.png  | streamlit_dashboard_ac_wk2.py|
+| 3    | Time               | apartment_community_wk3.py    |   wk3_beveiliging_camera_time.png    | not applicable|
+| 4    | Distributions                  | apartment_community_wk4.py    |    wk4_log_berichtlengtes_distributions.png   | streamlit_dashboard_ac_wk4.py|
+| 5    | Relationship                 | apartment_community_wk5.py    |     wk5_aantal_berichten_per_etage_relationship_lift.png  |streamlit_dashboard_ac_wk5.py |
+| 6    | Modelling with PCA                 | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png | aa|
+
 
 
 # Project structure
 Below tree depicts relevant project files related to the assignments.<br>
-The main. script is `apartment_community.py`<br>
 Generated images are saved in the `img` folder.<br>
-Logs are saved in the `src` sub folder
+Generated logs are saved in the `logs` folder.<br>
+The `src/wa_analyzer` folder contains the source codes for the source scripts and related web apps.
+The `config.toml` contains the references for paths and parameters.
+The `pyproject.toml` contains the required packages for the project.
 
 ```
 .
 ├── README.md
-├── checklist.md
-├── config.example.toml
 ├── config.toml
-├── dashboards
+├── config
 ├── data
-├── dev
-├── dist
 ├── img
-│   ├── wk2_lift_gesprekken_comparing_categories.png
+│   ├── wk2_emoji_bestuursfunctie_comparing_categories.png
 │   ├── wk3_beveiliging_camera_time.png
 │   ├── ...
+├── logs
 ├── notebooks
 │   ├── 01-cleaning.ipynb
 │   ├── 02-Gino-comparing_categories.ipynb
 ...
-├── presentations
-├── pyproject.toml
-├── references
+
 ├── src
 │   └── wa_analyzer
 │       ├── __init__.py
 ...
 │       ├── apartment_community_wk#.py
+│       ├── streamlit_dashboard_ac_wk#.py
 ...
-│       ├── logs
-│       │   └── logfile.log
-...
+├── config.toml
+├── pyproject.toml
+├── README.md
 
 ```
 
+
 # Script usage
 ## Install uv package manager
+This project uses python package manager 'UV'.
 Make sure you have `uv` installed. You can check this by typing `which uv` in the terminal. If that doesnt return a location but `uv not found` you need to install it.<br>
 On Unix systems, you can use `curl -LsSf https://astral.sh/uv/install.sh | sh`, for Windows read the [uv documentation](https://docs.astral.sh/uv/getting-started/installation/)
 
 
+## Create venv
+Creates your virtual environment and installs all required packages for the project.
+```
+uv sync --all-extras
+```
+
 ## Activate venv
-Activate venv<br>
 From the root directory of the project activate and verify the `venv`:<br>
 
 ```
@@ -95,43 +100,74 @@ From the root directory of the project activate and verify the `venv`:<br>
 (wa-analyzer) (base) jdoe-MacBook-Pro:MADS-DAV jdoe$
 ```
 ## Run script
-After this, you can run the scripts with the following `command` and `keyword`, eg:
+There are 2 options to create the visualizations:
+1. run the source script from command line, and view the results as an image file in the `img` folder.
+2. run the streamlit webapp from command line, and view the results or adjust variables as desired in the web app.
+
+Both commands should be run from the root directory of the project. In some cases, additional parameters may be required.
+The parameter(s) can be found in the 
+For some assigments a streamlit webapp is not available.
 
 ### week 2
-keyword options: ["lift", "schoon", "camera"]<br>
-Example
-```bash
+parameter reference: "emoji: number of emojies in the chat per author; length: average message length in the chat per author"<br>
 
-uv run src/wa_analyzer/apartment_community_wk2.py --keyword lift
+Usage option 1:
+```
+uv run src/wa_analyzer/apartment_community_wk2.py --metric emoji
+uv run src/wa_analyzer/apartment_community_wk2.py --metric length
 
 ```
 
-### week 3
-keyword options: ["lift", "schoon", "camera", "dank"],<br>
-Example
-```bash
+Usage option 2:
+```
+streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk2.py
+```
 
+
+### week 3
+parameter reference:
+
+Usage option 1:
+```
 uv run src/wa_analyzer/apartment_community_wk3.py
 
 ```
 
 ### week 4
+parameter description: "number of top authors"
+parameter options: 10 (default)
+
+Usage option 1:
+```
+uv run src/wa_analyzer/apartment_community_wk4.py
+uv run src/wa_analyzer/apartment_community_wk4.py --top 20
 ```
 
-uv run src/wa_analyzer/apartment_community_wk4.py --top 10
+Usage option 2:
+```
+streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk4.py
 ```
 
 ### week 5
-```
+parameter description: "keyword related facilities or hygiene"
+parameter options: ["lift", "schoon", "camera"]<br>
 
+Usage option 1, example:
+```
 uv run src/wa_analyzer/apartment_community_wk5.py --keyword lift
 ```
 
-### week 6
+Usage option 2:
+```
+streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk5.py
 ```
 
-uv run src/wa_analyzer/apartment_community_wk6.py --label Gender --keywords lift camera trap ventilatie
+### week 6
+parameter options in config.toml:
 
+Usage option 1:
+```
+uv run src/wa_analyzer/apartment_community_wk6.py
 ```
 
 ## Logs

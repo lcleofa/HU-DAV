@@ -1,641 +1,677 @@
 {
   "bejeweled-beluga": {
     "Name": "Jan Willem Fijen",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": false
   },
   "billowy-meerkat": {
     "Name": "Cosimo  Latorre",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 242,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "bold-bison": {
     "Name": "Cora",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 201,
     "Floor_nr": 1,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "bouncy-worm": {
     "Name": "Fien",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 238,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "cackling-eland": {
     "Name": "Maya Sermeno",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 241,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "captivating-dove": {
     "Name": "Bierangna",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 206,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "carefree-lark": {
     "Name": "Maureen De Keyzer",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
-    "Unit_nr": 230,
-    "Floor_nr": 3,
+    "Unit_nr": 247,
+    "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "cheerful-boar": {
     "Name": "Rinus Friederichs 223",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 223,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "cheerful-mule": {
     "Name": "Joan Dest",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 232,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "chuckling-stork": {
     "Name": "Diana Blitz",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 218,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "coltish-owl": {
     "Name": "Lex Eisenhardt",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 200,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "cordial-eel": {
     "Name": "Femke",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "dazzling-curlew": {
     "Name": "J. Guy",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 235,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "dazzling-yak": {
     "Name": "Stephanie Mulder",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 212,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "dynamic-frog": {
     "Name": "Henny Gena ",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 206,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "ebullient-mosquito": {
     "Name": "Tba 215 Agatha",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 215,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "elaborate-jay": {
     "Name": "J.",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "entertaining-pig": {
     "Name": "Cher",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 204,
     "Floor_nr": 2,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "ethereal-lapwing": {
     "Name": "Joke",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 240,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "eye-catching-hare": {
     "Name": "Angelique",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": true
   },
   "eye-catching-okapi": {
-    "Name": "Lefman Kan",
-    "Gender": "Man",
+    "Name": "LefMale Kan",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 203,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": true
   },
   "flecked-beluga": {
     "Name": "Tristan Heijdra",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 203,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "flexible-platypus": {
     "Name": "Margreet Lange",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 222,
     "Floor_nr": 8,
     "Nr_rooms": 3,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "freckled-wolverine": {
     "Name": "Songül",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "funny-swallow": {
     "Name": "Gino Cleofa",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 211,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": false
   },
   "gaudy-whale": {
     "Name": "Alessandro",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 202,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": false
   },
   "giddy-tardigrade": {
     "Name": "Yaron",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "goofy-tiger": {
     "Name": "jona de kruif",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "happy-beaver": {
     "Name": "Irfan Alic",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 219,
     "Floor_nr": 7,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "hilarious-dogfish": {
     "Name": "Anita Kieft",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 209,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "intense-toad": {
-    "Name": "Herman",
-    "Gender": "Man",
+    "Name": "HerMale",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 222,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "joyful-okapi": {
     "Name": "R.A.W.",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 231,
     "Floor_nr": 3,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "joyful-salmon": {
     "Name": "Mari",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 244,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": true
   },
   "kooky-tapir": {
     "Name": "Z",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "limber-ostrich": {
     "Name": "Tim",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 233,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "loony-albatross": {
     "Name": "Roos",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 244,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "lustrous-reindeer": {
     "Name": "JF",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 219,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
-  "merry-salamander": {
+  "merry-salaMaleder": {
     "Name": "Estelle Dura",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 208,
     "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "mind-blowing-kudu": {
     "Name": "Coleta",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 240,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "multicolored-dogfish": {
     "Name": "Thijmen Santen",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 209,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "nimble-raven": {
     "Name": "Ellie Togni",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 233,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "nutty-chamois": {
     "Name": "Eric Laenen",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "peculiar-ape": {
     "Name": "NienkeS",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 247,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "pellucid-quelea": {
     "Name": "Mario",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 207,
     "Floor_nr": 3,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "peppy-badger": {
     "Name": "Cor ten Bosch",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 205,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "peppy-rat": {
-    "Name": "Cyriel Reestman",
-    "Gender": "Man",
+    "Name": "Cyriel ReestMale",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 236,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "piebald-jay": {
     "Name": "Monique ten Bosch",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 205,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": false
   },
   "piebald-rhinoceros": {
     "Name": "Simo",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 202,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "psychedelic-boar": {
     "Name": "Eric",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 238,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "quick-chamois": {
     "Name": "Muhammed Ünal",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 229,
     "Floor_nr": 2,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "radiant-coyote": {
     "Name": "Maaike Françoys",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "resplendent-aardwolf": {
     "Name": "Ids Fijen",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 226,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "rollicking-ostrich": {
     "Name": "Suze Zeegers",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 224,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "saturated-whistling duck": {
     "Name": "Santiago",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 210,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "silky-lapwing": {
     "Name": "Dylan",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 213,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "snorting-ibex": {
-    "Name": "Machteld Bouman",
-    "Gender": "Vrouw",
+    "Name": "Machteld BouMale",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 200,
     "Floor_nr": 1,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "soft-eland": {
     "Name": "Jordy Van Rookhuizen",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 210,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "sparkly-mole": {
     "Name": "Stephan Ceuppens",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 237,
     "Floor_nr": 5,
     "Nr_rooms": 3,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "splattered-barracuda": {
     "Name": "Gre",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 234,
     "Floor_nr": 4,
     "Nr_rooms": 3,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "springy-hare": {
     "Name": "Wil Pouw",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 214,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "stippled-pig": {
     "Name": "Dick",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 217,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "sudsy-eland": {
     "Name": "Ineke",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 216,
     "Floor_nr": 6,
     "Nr_rooms": 3,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "sudsy-gazelle": {
     "Name": "Enrico",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 245,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "sudsy-jellyfish": {
-    "Name": "Jos Buurman",
-    "Gender": "Man",
+    "Name": "Jos BuurMale",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 214,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "sunny-gazelle": {
     "Name": "Colinda Kooter",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 223,
     "Floor_nr": 8,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "tittering-fennec fox": {
     "Name": "Johan",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "upbeat-pigeon": {
     "Name": "Mirella Habits",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 235,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": false
   },
   "vivid-rhinoceros": {
     "Name": "Martin",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "waggish-porcupine": {
     "Name": "Annelien Berends",
-    "Gender": "Vrouw",
+    "Gender": "Female",
     "Entrance_nr": 2,
     "Unit_nr": 245,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Older_then_50": false
+    "Older_then_65": true
   },
   "wispy-reindeer": {
     "Name": "Tarcis Schipper",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 2,
-    "Unit_nr": 247,
-    "Floor_nr": 8,
+    "Unit_nr": 230,
+    "Floor_nr": 3,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": true
   },
   "zany-trout": {
     "Name": "Henk Habits",
-    "Gender": "Man",
+    "Gender": "Male",
     "Entrance_nr": 1,
     "Unit_nr": 212,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Older_then_50": true
+    "Older_then_65": false
+  },
+  "cackling-wasp": {
+    "Name": "Paul Albada Jelgersma",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 209,
+    "Floor_nr": 4,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "chipper-quetzal": {
+    "Name": "Siam Habema",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 217,
+    "Floor_nr": 6,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "flecked-pheasant": {
+    "Name": "Daniel",
+    "Gender": "Male",
+    "Entrance_nr": 1,
+    "Unit_nr": 247,
+    "Floor_nr": 8,
+    "Nr_rooms": 5,
+    "Older_then_65": false
+  },
+  "riotous-wombat": {
+    "Name": "Umt",
+    "Gender": "Female",
+    "Entrance_nr": 1,
+    "Unit_nr": 245,
+    "Floor_nr": 7,
+    "Nr_rooms": 5,
+    "Older_then_65": false
   }
 }
