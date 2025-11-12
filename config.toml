@@ -15,7 +15,7 @@ logdir = "logs"
 imgdir = "img"
 
 [Analysis]
-top_n = 60
+top_n = 10
 keywords = ["lift", "schoon", "camera"]
 keywords_wk3 = ["camera"]
 max_question_length = 800  # <-- new configurable threshold
