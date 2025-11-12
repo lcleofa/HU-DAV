@@ -22,7 +22,8 @@ This can be depicted in an image file or a streamlit webapp.
 For this course, I am analyzing a WhatsApp group export from my apartment building.<br>
 The project focuses on following categories:
 - Whatsapp activities by authors 
-- Facilities
+- Facilities like 'elevator'(lift) and 'camera'
+- Hygiene 
 
 <br>
 
@@ -37,24 +38,28 @@ References python scripts and visualization image files:
 | 3    | Time               | apartment_community_wk3.py    |   wk3_beveiliging_camera_time.png    | not applicable|
 | 4    | Distributions                  | apartment_community_wk4.py    |    wk4_log_berichtlengtes_distributions.png   | streamlit_dashboard_ac_wk4.py|
 | 5    | Relationship                 | apartment_community_wk5.py    |     wk5_aantal_berichten_per_etage_relationship_lift.png  |streamlit_dashboard_ac_wk5.py |
-| 6    | Modelling with PCA                 | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png | aa|
+| 6    | Modelling with PCA                 | apartment_community_wk6.py    |      wk6_pca_modelling_gender_highlighted.png | streamlit_dashboard_ac_wk6.py|
 
 
 
 # Project structure
 Below tree depicts relevant project files related to the assignments.<br>
+Source dataset and meta data are contained in the `data` folder.<br>
 Generated images are saved in the `img` folder.<br>
 Generated logs are saved in the `logs` folder.<br>
-The `src/wa_analyzer` folder contains the source codes for the source scripts and related web apps.
-The `config.toml` contains the references for paths and parameters.
+The `src/wa_analyzer` folder contains the source codes for the source scripts and related web apps.<br>
+The `config.toml` contains the references for paths and parameters.<br>
 The `pyproject.toml` contains the required packages for the project.
 
 ```
 .
 ├── README.md
 ├── config.toml
-├── config
 ├── data
+│   └── meta
+│       ├── resident_metadata.json
+│   └── processed
+│       ├── whatsapp-20250910-235500.parquet
 ├── img
 │   ├── wk2_emoji_bestuursfunctie_comparing_categories.png
 │   ├── wk3_beveiliging_camera_time.png
@@ -77,7 +82,7 @@ The `pyproject.toml` contains the required packages for the project.
 ├── README.md
 
 ```
-
+<br>
 
 # Script usage
 ## Install uv package manager
@@ -101,7 +106,7 @@ From the root directory of the project activate and verify the `venv`:<br>
 ```
 ## Run script
 There are 2 options to create the visualizations:
-1. run the source script from command line, and view the results as an image file in the `img` folder.
+1. run the source script from command line, and view the results as an image file located in the `img` folder.
 2. run the streamlit webapp from command line, and view the results or adjust variables as desired in the web app.
 
 Both commands should be run from the root directory of the project. In some cases, additional parameters may be required.
@@ -109,35 +114,43 @@ The parameter(s) can be found in the
 For some assigments a streamlit webapp is not available.
 
 ### week 2
-parameter reference: "emoji: number of emojies in the chat per author; length: average message length in the chat per author"<br>
+parameter reference: 
+- emoji: number of emojies in the chat per author
+- length: average message length in the chat per author"<br>
 
-Usage option 1:
-```
+<br>
+Usage option 1:<br>
+
+``` 
 uv run src/wa_analyzer/apartment_community_wk2.py --metric emoji
 uv run src/wa_analyzer/apartment_community_wk2.py --metric length
-
 ```
+
 
 Usage option 2:
 ```
 streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk2.py
 ```
 
-
 ### week 3
-parameter reference:
+parameter reference config.toml:
+- keywords_wk3 = ["camera"]
 
+<br>
 Usage option 1:
+
 ```
 uv run src/wa_analyzer/apartment_community_wk3.py
 
 ```
 
 ### week 4
-parameter description: "number of top authors"
-parameter options: 10 (default)
+parameter reference config.toml: 
+- top_n = 10 (default)
 
+<br>
 Usage option 1:
+
 ```
 uv run src/wa_analyzer/apartment_community_wk4.py
 uv run src/wa_analyzer/apartment_community_wk4.py --top 20
@@ -149,10 +162,12 @@ streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk4.py
 ```
 
 ### week 5
-parameter description: "keyword related facilities or hygiene"
-parameter options: ["lift", "schoon", "camera"]<br>
+parameter reference config.toml: 
+- keywords = ["lift", "schoon", "camera"]<br>
 
+<br>
 Usage option 1, example:
+
 ```
 uv run src/wa_analyzer/apartment_community_wk5.py --keyword lift
 ```
@@ -163,11 +178,25 @@ streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk5.py
 ```
 
 ### week 6
-parameter options in config.toml:
+parameter reference config.toml:
+- [Stylometry]
+   - xmin = 10000
+   - xmax = 40000
+   - ymin = -6500
+   - ymax = -4500
+   - outlier_threshold_x = 140000
+   - sample_n = 10
 
+<br>
 Usage option 1:
+
 ```
 uv run src/wa_analyzer/apartment_community_wk6.py
+```
+
+Usage option 2:
+```
+streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk6.py
 ```
 
 ## Logs

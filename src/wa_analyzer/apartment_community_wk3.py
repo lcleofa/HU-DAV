@@ -27,11 +27,19 @@ class CameraAnalysis:
 
     def __init__(self, df: pd.DataFrame, config: dict):
         self.df = df
-        self.keywords = config.get("Analysis", {}).get("keywords_wk3", ["camera"])
+        
+        analysis_cfg = config.get("Analysis", {})
+        # Prefer keywords_wk3, fallback to keywords, raise error if none defined
+        if "keywords_wk3" in analysis_cfg:
+            self.keywords = analysis_cfg["keywords_wk3"]
+        elif "keywords" in analysis_cfg:
+            self.keywords = analysis_cfg["keywords"]
+        else:
+            raise KeyError("No keywords defined in config under [Analysis]")
 
         # Strictly read thresholds from config, raise error if missing
         try:
-            peaks_cfg = config["Analysis"]["Peaks"]
+            peaks_cfg = analysis_cfg["Peaks"]
             self.peak_thresholds = {
                 "peak1_threshold": peaks_cfg["peak1_threshold"],
                 "peak2_threshold": peaks_cfg["peak2_threshold"]
