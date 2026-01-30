@@ -674,31 +674,31 @@
     "Nr_rooms": 5,
     "Board_function": "not_applicable"
   },
-  "coruscating-numbat": {
-    "Name": "CN",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
+    "coruscating-numbat": {
+      "Name": "CN",
+      "Gender": "Female",
+      "Entrance_nr": 1,
+      "Unit_nr": 245,
+      "Floor_nr": 7,
+      "Nr_rooms": 5,
+      "Board_function": "not_applicable"
   },
-  "hysterical-partridge": {
-    "Name": "HP",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
+    "hysterical-partridge": {
+      "Name": "HP",
+      "Gender": "Female",
+      "Entrance_nr": 1,
+      "Unit_nr": 245,
+      "Floor_nr": 7,
+      "Nr_rooms": 5,
+      "Board_function": "not_applicable"
   },
-  "light-dunlin": {
-    "Name": "LD",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
-  }
+    "light-dunlin": {
+      "Name": "LD",
+      "Gender": "Female",
+      "Entrance_nr": 1,
+      "Unit_nr": 245,
+      "Floor_nr": 7,
+      "Nr_rooms": 5,
+      "Board_function": "not_applicable"
+    }  
 }
