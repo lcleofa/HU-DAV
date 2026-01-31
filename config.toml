@@ -14,6 +14,11 @@ logdir = "logs"
 [Images]
 imgdir = "img"
 
+[Clustering]
+perplexity = 5
+eps = 4
+min_samples = 3
+
 [Analysis]
 top_n = 10
 keywords = ["lift", "schoon", "camera"]

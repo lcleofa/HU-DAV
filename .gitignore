@@ -31,3 +31,4 @@ references/
 presentations/
 src/wa_analyzer/__pycache__
 *.txt
+src/wa_analyzer/apartment_community_wk66.py
