@@ -42,7 +42,7 @@
     "Unit_nr": 241,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Board_function": "Bestuurslid_1"
+    "Board_function": "Algemeen bestuurslid"
   },
   "captivating-dove": {
     "Name": "B",
@@ -249,7 +249,7 @@
     "Unit_nr": 220,
     "Floor_nr": 7,
     "Nr_rooms": 5,
-    "Board_function": "Bestuurslid_2"
+    "Board_function": "Algemeen bestuurslid"
   },
   "happy-beaver": {
     "Name": "IA",
@@ -312,7 +312,7 @@
     "Unit_nr": 233,
     "Floor_nr": 4,
     "Nr_rooms": 5,
-    "Board_function": "Bestuurslid_3"
+    "Board_function": "Algemeen bestuurslid"
   },
   "loony-albatross": {
     "Name": "RS",
@@ -332,7 +332,7 @@
     "Nr_rooms": 3,
     "Board_function": "not_applicable"
   },
-  "merry-salamander": {
+  "merry-salaMaleder": {
     "Name": "ED",
     "Gender": "Female",
     "Entrance_nr": 1,
@@ -573,7 +573,7 @@
     "Unit_nr": 214,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Board_function": "Commissielid_3"
+    "Board_function": "Commissielid"
   },
   "sunny-gazelle": {
     "Name": "CA",
@@ -609,7 +609,7 @@
     "Unit_nr": 239,
     "Floor_nr": 6,
     "Nr_rooms": 5,
-    "Board_function": "Commissielid_1"
+    "Board_function": "Commissielid"
   },
   "waggish-porcupine": {
     "Name": "AA",
@@ -636,7 +636,7 @@
     "Unit_nr": 212,
     "Floor_nr": 5,
     "Nr_rooms": 5,
-    "Board_function": "Commissielid_2"
+    "Board_function": "Commissielid"
   },
   "cackling-wasp": {
     "Name": "DD",
@@ -667,33 +667,6 @@
   },
   "riotous-wombat": {
     "Name": "XC",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
-  },
-  "coruscating-numbat": {
-    "Name": "CN",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
-  },
-  "hysterical-partridge": {
-    "Name": "HP",
-    "Gender": "Female",
-    "Entrance_nr": 1,
-    "Unit_nr": 245,
-    "Floor_nr": 7,
-    "Nr_rooms": 5,
-    "Board_function": "not_applicable"
-  },
-  "light-dunlin": {
-    "Name": "LD",
     "Gender": "Female",
     "Entrance_nr": 1,
     "Unit_nr": 245,
