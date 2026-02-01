@@ -7,6 +7,9 @@ import numpy as np
 from pathlib import Path
 from loguru import logger
 import warnings
+from scipy.stats import mannwhitneyu 
+from cliffs_delta import cliffs_delta
+
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -70,10 +73,14 @@ class QuestionLengthAnalysis:
         if not hasattr(self, "df_question"):
             raise RuntimeError("prepare_data() must be run before plotting.")
 
-        logger.info("Plotting histogram with KDE by gender...")
+        logger.info("Plotting histogram with KDE and medians by gender...")
 
         df_male = self.df_question[self.df_question["author_gender"] == "Male"]
         df_female = self.df_question[self.df_question["author_gender"] == "Female"]
+
+        # --- Compute medians ---
+        median_male = df_male["msg_length"].median()
+        median_female = df_female["msg_length"].median()
 
         plt.figure(figsize=(14, 8))
 
@@ -99,12 +106,27 @@ class QuestionLengthAnalysis:
             label="Vrouwelijke auteurs",
         )
 
+        # --- Median lines ---
+        plt.axvline(
+            median_male,
+            linestyle="--",
+            linewidth=2.5,
+            label=f"Mediaan mannen (≈ {median_male:.0f})",
+        )
+
+        plt.axvline(
+            median_female,
+            linestyle="--",
+            linewidth=2.5,
+            label=f"Mediaan vrouwen (≈ {median_female:.0f})",
+        )
+
         # --- Log scale ---
         plt.xscale("log")
 
         plt.title(
             "Lengte van vraagberichten (log-schaal)\n"
-            "Gesmoothde distributies – alle mannen vs. alle vrouwen",
+            "Distributies vraagberichten – mannen vs. vrouwen whatsapp Flatgemeenschap",
             fontsize=16,
         )
         plt.xlabel("Berichtlengte (aantal tekens, log-schaal)")
@@ -113,11 +135,76 @@ class QuestionLengthAnalysis:
 
         plt.tight_layout()
 
-        save_path = self.img_dir / "vraaglengte_distributie_man_vrouw_log.png"
+        save_path = self.img_dir / "wk4_R_distributie_vraaglengtes_man_vrouw.png"
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
         plt.close()
 
-        logger.info(f"Saved plot to {save_path}")
+        logger.info(
+            f"Saved plot to {save_path} | "
+            f"Median male: {median_male:.2f}, Median female: {median_female:.2f}"
+        )
+
+    def log_summary(self):
+        """Log dataset overview and statistical summary of question lengths by gender."""
+        if not hasattr(self, "df_question"):
+            raise RuntimeError("prepare_data() must be run before printing summary.")
+
+        df = self.df_question
+        df_male = df[df["author_gender"] == "Male"]
+        df_female = df[df["author_gender"] == "Female"]
+
+        # --- Dataset overview ---
+        total_msgs = len(self.df)
+        total_authors = self.author_info_df["author"].nunique()
+        n_male_authors = (self.author_info_df["Gender"] == "Male").sum()
+        n_female_authors = (self.author_info_df["Gender"] == "Female").sum()
+        n_questions = len(df)
+        n_questions_male = len(df_male)
+        n_questions_female = len(df_female)
+
+        logger.info("Datasetoverzicht:")
+        logger.info(f"  Totaal aantal berichten in chat : {total_msgs}")
+        logger.info(f"  Totaal aantal deelnemers        : {total_authors}")
+        logger.info(f"    ├─ Mannen                     : {n_male_authors}")
+        logger.info(f"    └─ Vrouwen                    : {n_female_authors}")
+        logger.info(f"  Aantal vragen                   : {n_questions}")
+        logger.info(f"    ├─ Mannen                     : {n_questions_male}")
+        logger.info(f"    └─ Vrouwen                    : {n_questions_female}")
+
+        # --- Robust statistics ---
+        median_male = df_male["msg_length"].median()
+        iqr_male = df_male["msg_length"].quantile(0.75) - df_male["msg_length"].quantile(0.25)
+        median_female = df_female["msg_length"].median()
+        iqr_female = df_female["msg_length"].quantile(0.75) - df_female["msg_length"].quantile(0.25)
+
+        logger.info("Robuuste statistieken:")
+        logger.info(f"  Mediaan mannen   : {median_male:.1f} (IQR = {iqr_male:.1f})")
+        logger.info(f"  Mediaan vrouwen  : {median_female:.1f} (IQR = {iqr_female:.1f})")
+
+        # --- Mann–Whitney U-test ---
+        u_stat, p_val = mannwhitneyu(df_female["msg_length"], df_male["msg_length"], alternative="two-sided")
+        logger.info("Mann–Whitney U-test:")
+        logger.info(f"  U-statistiek : {u_stat:.1f}")
+        logger.info(f"  p-waarde     : {p_val:.6f}")
+
+        # --- Effect size (Cliff's delta) ---
+        delta, interpretation = cliffs_delta(df_female["msg_length"], df_male["msg_length"])
+        logger.info("Effect size:")
+        logger.info(f"  Cliff’s delta = {delta:.3f}")
+        logger.info(f"  Interpretatie : {interpretation}")
+
+        # --- Bootstrap 95% CI verschil medianen ---
+        np.random.seed(42)
+        n_boot = 10000
+        med_diff = []
+        for _ in range(n_boot):
+            sample_male = np.random.choice(df_male["msg_length"], size=len(df_male), replace=True)
+            sample_female = np.random.choice(df_female["msg_length"], size=len(df_female), replace=True)
+            med_diff.append(np.median(sample_female) - np.median(sample_male))
+        ci_low, ci_high = np.percentile(med_diff, [2.5, 97.5])
+        logger.info("Bootstrap 95% betrouwbaarheidsinterval:")
+        logger.info(f"  Verschil medianen (vrouw - man): [{ci_low:.1f}, {ci_high:.1f}]")
+
 
 
 # ====================================================
@@ -142,7 +229,7 @@ def main():
     args = parser.parse_args()
 
     # --- Setup logger ---
-    log_filename = "question_length_gender.log"
+    log_filename = "wk4_vraagberichten_distributie.log"
     LoggerSetup(config, log_filename).setup()
     logger.info("Logger initialized successfully.")
 
@@ -171,6 +258,7 @@ def main():
     )
 
     analysis.prepare_data()
+    analysis.log_summary()
     analysis.plot_histogram()
 
     logger.info("Question length analysis finished successfully.")

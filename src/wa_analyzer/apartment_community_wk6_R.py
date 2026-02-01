@@ -137,7 +137,7 @@ class CommunicativeStyleAnalysis:
         plt.title("PCA – communicatiestijl per bewoner")
         plt.tight_layout()
 
-        out = self.img_dir / "wk6R_1_pca_communicatiestijl_bewoner.png"
+        out = self.img_dir / "wk6_R_1_pca_communicatiestijl_bewoner.png"
         plt.savefig(out, dpi=300)
         plt.close()
 
@@ -161,7 +161,7 @@ class CommunicativeStyleAnalysis:
         plt.title("t-SNE – Communicative Styles")
         plt.tight_layout()
 
-        out = self.img_dir / "wk6R_2_tnse_communicatiestijl.png"
+        out = self.img_dir / "wk6_R_2_tnse_communicatiestijl.png"
         plt.savefig(out, dpi=300)
         plt.close()
 
@@ -192,11 +192,11 @@ class CommunicativeStyleAnalysis:
             hue="cluster_label",
             s=100,
         )
-        plt.title("t-SNE Clusters of Communicative Styles")
+        plt.title("t-SNE Clusters met communicatiestijlen in de WhatsApp flatgebouw")
         plt.legend(title="Cluster")
         plt.tight_layout()
 
-        out = self.img_dir / "wk6R_3_tnse_communicatiestijl_labelled.png"
+        out = self.img_dir / "wk6_R_3_tnse_communicatiestijl_labelled.png"
         plt.savefig(out, dpi=300)
         plt.close()
 
@@ -235,7 +235,7 @@ class CommunicativeStyleAnalysis:
         plt.title("Manhattan Distance: binnen clusters vs. tussen clusters")
         plt.tight_layout()
 
-        out = self.img_dir / "wk6R_5_Manhattan_distance_binnen_vs_tussen_cluster.png"
+        out = self.img_dir / "wk6_R_5_Manhattan_distance_binnen_vs_tussen_cluster.png"
         plt.savefig(out, dpi=300)
         plt.close()
 
@@ -267,7 +267,7 @@ class CommunicativeStyleAnalysis:
         plt.title("Samenvatting Cluster Labeled tabel – communicatiestijl", pad=20)
         plt.tight_layout()
 
-        out = self.img_dir / "wk6R_4_labeled_cluster_tabel.png"
+        out = self.img_dir / "wk6_R_4_labeled_cluster_tabel.png"
         plt.savefig(out, dpi=300)
         plt.close()
 

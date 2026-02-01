@@ -7,6 +7,7 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "cliffs-delta>=1.0.0",
     "duckdb>=1.3.2",
     "emoji>=2.15.0",
     "mads-datasets>=0.3.14",

@@ -132,6 +132,11 @@ Usage option 2:
 streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk2.py
 ```
 
+Usage option 3 (REPAIR):
+```
+uv run src/wa_analyzer/apartment_community_wk2_R.py
+```
+
 ### week 3
 parameter reference config.toml:
 - keywords_wk3 = ["camera"]
@@ -148,6 +153,7 @@ uv run src/wa_analyzer/apartment_community_wk3.py
 parameter reference config.toml: 
 - top_n = 10 (default)
 
+
 <br>
 Usage option 1:
 
@@ -159,6 +165,11 @@ uv run src/wa_analyzer/apartment_community_wk4.py --top 20
 Usage option 2:
 ```
 streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk4.py
+```
+
+Usage option 3 (REPAIR):
+```
+uv run src/wa_analyzer/apartment_community_wk4_R.py
 ```
 
 ### week 5
@@ -197,6 +208,11 @@ uv run src/wa_analyzer/apartment_community_wk6.py
 Usage option 2:
 ```
 streamlit run src/wa_analyzer/streamlit_dashboard_ac_wk6.py
+```
+
+Usage option 3 (REPAIR):
+```
+uv run src/wa_analyzer/apartment_community_wk6_R.py
 ```
 
 ## Logs
