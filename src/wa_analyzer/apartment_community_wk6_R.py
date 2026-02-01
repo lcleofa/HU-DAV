@@ -192,7 +192,7 @@ class CommunicativeStyleAnalysis:
             hue="cluster_label",
             s=100,
         )
-        plt.title("t-SNE Clusters of Communicative Styles")
+        plt.title("t-SNE Clusters met communicatiestijlen in de WhatsApp flatgebouw")
         plt.legend(title="Cluster")
         plt.tight_layout()
 

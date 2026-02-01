@@ -1,3 +1,4 @@
+
 """
 WhatsApp Chat Analysis – Emoji Usage per Board Function
 ======================================================
@@ -153,7 +154,7 @@ class BoardFunctionEmojiAnalysis:
 
         output_path = (
             self.img_dir
-            / "wk2_percentage_berichten_met_emojis_per_bestuursfunctie.png"
+            / "wk2_R_percentage_berichten_met_emojis_per_bestuursfunctie.png"
         )
         plt.savefig(output_path, dpi=300, bbox_inches="tight")
         plt.close()
